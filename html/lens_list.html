@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lens list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        <link href="../css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/product_list.css" type="text/css">
+
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/product_list.js"></script>
+        <script type="text/javascript" src="../js/paging.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div id="nav">
+                    <div class="top_header">
+                        <h1 class="logo">
+                            <a href="main.html">
+                                <img src="../img/logo.png" alt="nikon logo">
+                            </a>
+                        </h1>
+
+                        <div class="gnb">
+                            <ul>
+                                <li class="home">
+                                    <a href="main.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="product_list.html">제품정보</a>
+                                    <div class="hidden_nav_wrap">
+                                        <div class="hidden_1">
+                                            <div class="left_1">
+                                                <div class="center">
+                                                    <span class="slr_p">
+                                                        <h2>SLR</h2>
+                                                        <a href="dslr_list.html"><i class="fa fa-camera fa-5x" aria-hidden="true"></i></a>
+                                                    </span>
+                                                    <span class="lens_p">
+                                                        <h2>Lens</h2>
+                                                        <a href="lens_list.html"><i class="fa fa-eercast fa-5x" aria-hidden="true"></i></a>
+                                                    </span>
+                                                    <span class="sw_p">
+                                                        <h2>Software</h2>
+                                                        <a href=""><i class="fa fa-desktop fa-5x" aria-hidden="true"></i></i></a>
+                                                    </span>
+                                                    <span class="gal_p">
+                                                        <h2>Accessory</h2>
+                                                        <a href=""><i class="fa fa-book fa-5x" aria-hidden="true"></i></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="right_1">
+                                                <span class="slr_c">
+                                                    <h2>DSLR</h2>
+                                                    <p>전문가를 위한 DX 포맷부터 입문자를 위한 FX 포맷까지!
+                                                    니콘 최고의 기술이 집약된 다양한 라인업의 SLR 카메라, D Series</p>
+                                                    <span>
+                                                        <img src="http://www.nikon-image.co.kr/img/product/prod_img_d5.png" alt="d5">
+                                                        <img src="http://www.nikon-image.co.kr/img/product/prod_img_df.png" alt="d4s">
+                                                        <img src="http://www.nikon-image.co.kr/img/product/prod_img_f6.png" alt="d810">
+                                                    </span>
+                                                </span>
+                                                <span class="lens_c">
+                                                    <h2>NIKKOR Lens</h2>
+                                                    <p>니콘의 독자적인 광학 기술이 집약된 렌즈교환식 카메라용 NIKKOR 렌즈. 약 90여 종 이상의 폭넓은 제품 라인업을 지원하여 누적 생산량 1억 개를 돌파한 니콘의 대표 렌즈 브랜드.</p>
+                                                    <span>
+                                                        <img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001322/NK0001322_Image_middle1.png" alt="">
+                                                        <img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001321/NK0001321_Image_middle1.png" alt="">
+                                                        <img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001279/NK0001279_Image_middle1.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="sw_c">
+                                                    <h2>Software</h2>
+                                                    <p>니콘 카메라로 촬영한 사진을 더욱 손쉽게 편집하고 공유할 수 있는 니콘의 독자적인 소프트웨어</p>
+                                                    <span>
+                                                        <img src="http://www.nikon-image.co.kr/img/product/prod_img_software_snapbridge360170.png" alt="">
+                                                        <img src="http://www.nikon-image.co.kr/img/product/prod_img_software_viewNXi.png" alt="">
+                                                        <img src="http://www.nikon-image.co.kr/img/product/prod_img_software_captureNXD.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="gal_c">
+                                                    <h2>Accessory</h2>
+                                                    <p>니콘 카메라의 뛰어난 성능을 최대한으로 이끌어내는 니콘의 액세서리</p>
+                                                    <span>
+                                                        <img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001314/NK0001314_Image_middle1.png" alt="">
+                                                        <img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001315/NK0001315_Image_middle1.jpg" alt="">
+                                                        <img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001317/NK0001317_Image_middle1.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery">
+                                    <a href="gallery.html">갤러리</a>
+                                </li>
+                                <li class="event">
+                                    <a href="event_list.html">이벤트</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="gnb2">
+                            <div class="gnb2_bar">
+                                <span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+                            </div>
+                            <div id="gnb_right">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">제품정보
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
+                                        <ul class="hidden_slide">
+                                            <li>
+                                                <a href="dslr_list.html">DSLR</a>
+                                            </li>
+                                            <li>
+                                                <a href="lens_list.html">NIKKOR Lens</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Software</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Gallery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">갤러리</a></li>
+                                    <li>
+                                        <a href="javascript:void(0)">이벤트
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
+                                        <ul class="hidden_slide">
+                                            <li>
+                                                <a href="event_list.html">진행중인 이벤트</a>
+                                            </li>
+                                            <li>
+                                                <a href="event_end.html">종료된 이벤트</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">로그인</a></li>
+                                    <li><a href="">회원가입</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sign">
+                            <ul>
+                                <li>
+                                    <a href="">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="">회원가입</a>
+                                </li>
+                                <li class="search">
+                                    <a href="javascript:void(0)"><img src="../img/search.png" alt=""></a>
+                                </li>
+                            </ul>
+                            <div class="search_hidden">
+                                <form action="" method="get">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <label for="search">search</label>
+                                    <input id="search" type="text" role="search" value="검색">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="scrolltotop" style="display: block;"><a href="#top"><span></span></a></div>
+                </div>
+            </header>
+
+            <div class="section_wrap">
+                <section id="intro">
+                    <div class="slides">
+                        <ul class="bxslides">
+                            <li><img src="../img/pd4.png" /></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="tablet">
+                    <div class="slides">
+                        <ul class="bxslider">
+                            <li><img src="../img/tablet2.png" /></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="mobile">
+                    <div class="slides">
+                        <ul class="bxslider">
+                            <li><img src="../img/mobile2.png" /></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="product">
+                    <div class="product_contents">
+                        <div class="product_list">
+                            <div class="title">
+                                <h1>렌즈<strong>NIKKOR Lens</strong></h1>
+                                <span class="line"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001322/NK0001322_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S NIKKOR 28mm f/1.4E ED</h4>
+                                            <span>압도적인 묘사력</span>
+                                        </div>
+                                        <div class="new_btn">NEW</div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001278/NK0001278_Image_middle1.png" alt=""></span>
+                                            <h4>PC NIKKOR 19mm f/4E ED</h4>
+                                            <span>초광각 PC 렌즈</span>
+                                        </div>
+                                        <div class="new_btn">NEW</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001246/NK0001246_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S NIKKOR 24mm f/1.8G ED</h4>
+                                            <span>소형·경량·고화질을 실현하다</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001259/NK0001259_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S NIKKOR 105mm f/1.4E ED</h4>
+                                            <span>자연스러운 공간묘사와 높은 재현성</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001245/NK0001245_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S NIKKOR 200-500mm f/5.6E ED VR</h4>
+                                            <span>높은 광학 성능과 VR 기구</span>
+                                        </div>
+                                        <div class="new_btn">NEW</div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001270/NK0001270_Image_middle1.png" alt=""></span>
+                                            <h4>AF-P DX NIKKOR 18-55mm f/3.5-5.6G VR</h4>
+                                            <span>뛰어난 AF 성능과 기동력</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001213/NK0001213_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S NIKKOR 20mm f/1.8G ED</h4>
+                                            <span>대구경 초광각 단초점 렌즈</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001279/NK0001279_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S NIKKOR 70-200mm f/2.8E FL ED VR</h4>
+                                            <span>보다 향상된 광학성능, 편의성, 기동성</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <strong class="tt">
+                                        <a href="">AF렌즈</a>
+                                        <span class="line"></span>
+                                    </strong>
+                                    <a href="">
+                                        <div class="list_wrap">
+                                            <span class="img_wrap"><img src="http://www.nikon-image.co.kr/upload/new_prdt/NK0001321/NK0001321_Image_middle1.png" alt=""></span>
+                                            <h4>AF-S Fisheye NIKKOR 8-15mm f/3.5-4.5E ED</h4>
+                                            <span>우수한 해상력, 묘사성능</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="paging">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination" id="pagination"></ul>
+                            </nav>
+                        </div>
+                        <script type="text/javascript">
+                            $('#pagination').twbsPagination({
+                                startPage: 1,	//시작 페이지
+                                totalPages: 10,	//총 페이지 갯수
+                                visiblePages: 5,	//보여줄 페이지
+                                onPageClick: function (event, page) {
+                                    console.log(event);
+                                    console.log(page);
+                                }
+                            });
+                        </script>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="bg">
+                    <div class="foot_section1">
+                        <div>
+                            <h5>회사소개</h5>
+                            <ul>
+                                <li><a href="">니콘소개</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>제품정보</h5>
+                            <ul>
+                                <li><a href="">DSLR</a></li>
+                                <li><a href="">Lens</a></li>
+                                <li><a href="">Software</a></li>
+                                <li><a href="">Accessory</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>이벤트</h5>
+                            <ul>
+                                <li><a href="">진행중인 이벤트</a></li>
+                                <li><a href="">종료된 이벤트</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>회원서비스</h5>
+                            <ul>
+                                <li><a href="">로그인</a></li>
+                                <li><a href="">회원가입</a></li>
+                                <li><a href="">ID 찾기</a></li>
+                                <li><a href="">비밀번호 찾기</a></li>
+                            </ul>
+                        </div>
+                        <div class="sns">
+                                <a href=""><span><i class="fa fa-youtube" aria-hidden="true"></i></span></a>
+                                <a href=""><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                                <a href=""><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                                <a href=""><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="foot_section2">
+                        <div class="foot_text">
+                            <span>COPYRIGHT © 2017. <strong>Nikon Imaging Korea CO.</strong> ALL RIGHTS RESERVED.</span>
+                            <p>
+                                <a href="">사이트맵</a>
+                                <a href="" style="color:#ffcc00">개인정보취급방침</a>
+                                <a href="">사이트 이용약관</a>
+                                <a href="">전자우편 무단수집거부</a>
+                            </p>
+                            <address class="">
+                                상호명 : 주식회사 니콘이미징코리아 / 대표이사 : 키타바타 히데유키 / TEL : 080-800-6600 / FAX : 02-2026-0029</br>주소 : 서울특별시 중구 세종대로 39 대한상공회의소 12층 (중구 남대문로 4-45) (㉾04513)</br>사업자등록번호 : 104-81-98839 / 통신판매업신고 : 중구 제05801호 / 콜센터 운영시간 : 평일 09:00 ~ 18:00 (토·일·공휴일 휴무)
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_bg"></div>
+            </footer>
+        </div>
+    </body>
+</html>
