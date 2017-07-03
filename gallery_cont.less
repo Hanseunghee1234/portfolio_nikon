@@ -1,7 +1,22 @@
 // out: css/gallery_cont.css, sourcemap: false, compress: true
-html{overflow-y: visible;;}
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');    //products, events font
+@import url('https://fonts.googleapis.com/css?family=Convergence');    //product h4 폰트
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none!important; color: black;}
+img(max-width:100%;)
+ul,ol,li{list-style: none;}
+html, body{width: 100%; height: 100%; font-size: 100%;}
+html{overflow-y: visible;}
+body{
+    font-family:'Roboto', 'Noto Sans KR', sans-serif;
+}
 @hg:447px;
 @mhg:647px;
+.wrap{position: relative;}
 #nav{
     width:100%; height: 75px;
     position: fixed;
@@ -236,13 +251,12 @@ html{overflow-y: visible;;}
     }
 }//nav end
 .section_wrap{
-    //background-color: #000;
     #contents{
         width: 100%; height: auto;
         padding-bottom: 100px;
-        padding-top: 100px;
+        padding-top: 140px;
         h1{
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Convergence', sans-serif;
             font-size: 22px; color: #666;
             font-weight: 600;
             padding: 0 0 20px 94px;
@@ -252,11 +266,8 @@ html{overflow-y: visible;;}
             margin: 0 auto;
             padding-bottom: 100px;
             .center{
-                //font-family: 'Roboto', sans-serif;
-                font-family: 'Convergence', sans-serif;
                 div{position: relative;}
                 a{
-                    //height: 322px;
                     display: block;
                     margin:20px;
                     opacity: 0.6;
@@ -281,10 +292,8 @@ html{overflow-y: visible;;}
         }
     }
 }
-
 @media screen and (max-width: 1920px) {
     #nav{
-        //background-color: #000;
         .top_header{
             max-width: 100%;
             width: 96%;
@@ -301,87 +310,29 @@ html{overflow-y: visible;;}
         }
     }
 }
-@media screen and (max-width: 1200px) { //1200이하일때, nav포함
-    #nav{
-        .top_header{
-            width: 80%;
-            .gnb{
-                li{a{font-size: 16px;}}
-            }
-            .sign{
-                li{a{font-size: 16px;}}
-                .search_hidden{right: 8%;}
-            }
-        }
-        .hidden_nav_wrap{
-            .hidden_1{
-                .left_1{
-                    width: 30%;
-                    padding: 50px 0 0 0;
-                    i{font-size: 75px;}
-                }//left_1 end
-                .right_1{
-                    width: 59%;
-                    padding: 50px 0 0 50px;
-                    img{
-                        width: 161px;
-                        margin-right: 5px;
-                        &:nth-child(5){margin-right: 0;}
-                    }
-                    .gal_c{
-                        display: none;
-                        img{
-                            width: 160px; height: 130px; border: 1px #CCC solid;
-                        }
-                    }
-
-                }
-            }
-        }//hidden_nav_wrap end
-    }
-}
-@media screen and (max-width: 886px) {    //nav포함
-    #nav{
-        .hidden_nav_wrap{
-            .hidden_1{
-
-                .right_1{
-                    float: left; width: 59%;
-                    padding: 50px 0 0 50px;
-                    span{display:inline-block; width: 100%;}
-                    img{width: 135px;}
-                    .gal_c{
-                        display: none;
-                        img{
-                            width: 130px; height: 130px; border: 1px #CCC solid;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-}
 @media screen and (max-width: 768px) { //768 이하일때, nav포함
     #nav{
-        //background-color: #000;
         .top_header{
             width: 95%;
-            .gnb{display: none;}
-            .gnb2{
-                .gnb2_bar{display: block;}
-            }
-            .sign{
-                li{
-                    &:nth-child(1){display: none;}
-                    &:nth-child(2){display: none;}
-                }
-            }
         }
     }
 }
 @media screen and (max-width: 480px){ //480 이하일때
-
+    #nav .top_header{
+        .logo{
+            width: 105px; height: 68px;
+            margin-left: -10px; margin-top: -10px;
+        }
+        .sign .search {
+            padding-top: 9px;
+            a{padding: 4px 8px 5px 8px;}
+        }
+        .sign .search_hidden{top:45px;}
+        .gnb2 .gnb2_bar {
+            padding-top: 11px;
+            span i{font-size: 1.5em;}
+        }
+    }
     footer{
         .bg{
             .foot_section1{

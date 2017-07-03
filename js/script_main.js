@@ -84,7 +84,6 @@ $(function(){
             }
         }
     })
-
 //----------------nav end---------------///////////
 
     //--------------search 버튼 클릭
@@ -102,7 +101,6 @@ $(function(){
             }
         }
     });
-
     //------------자세히 보기 text hover
     $('.intro_text span').on({
         'mouseenter':function(){
@@ -114,7 +112,6 @@ $(function(){
             .end().css({'background':'none', 'transition':'0.3s'})
         }
     })
-
     //-----------product 슬라이드 사진 변경
     $('.slides li').on({
         "mouseenter":function(){
@@ -132,7 +129,6 @@ $(function(){
             $(this).next().css('opacity','0')
         }
     });
-
     //-----------스크롤시 위로버튼 생성
     $('#scrolltotop').hide();
 
@@ -149,27 +145,22 @@ $(function(){
         }, 500);
         return false;
     });
-
     //-----------스크롤 내릴시 nav 보이고 스크롤 올릴시 nav 숨김
     var lastScrollTop = 0, delta = 15;
-
     $(window).scroll(function(event){
         var st = $(this).scrollTop();
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return; // 스크롤값을 받아서 리턴
-
-    if ((st > lastScrollTop) && (lastScrollTop>0)) {
-        $("#nav").css({"top":"-75px", "background-color":'#000'});
-         // 스크롤을 내렸을때 #nav CSS 속성중 top 값을 -75px로 변경
-    } else {
-        $("#nav").css("top","0px");
-    }
-    lastScrollTop = st;
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return; // 스크롤값을 받아서 리턴
+        if ((st > lastScrollTop) && (lastScrollTop>0)) {
+            $("#nav").css({"top":"-75px", "background-color":'#000'});
+             // 스크롤을 내렸을때 #nav CSS 속성중 top 값을 -75px로 변경
+        } else {
+            $("#nav").css("top","0px");
+        }
+        lastScrollTop = st;
     });
-
     ///////////////////////
-    $('.intro_image2').delay(800).slideUp(3000);
-
+    //$('.intro_image2').delay(800).slideUp(3000);
     $('.event_list li a img').on({
         'mouseenter':function(){
             $(this).parent().next().children('.title').css({
