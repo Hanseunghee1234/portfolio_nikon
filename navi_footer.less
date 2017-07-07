@@ -216,19 +216,35 @@
             }
         }
     }
-    #scrolltotop{position:fixed; bottom:0px; right:0px}
+    #scrolltotop{position:fixed; bottom:5%; right:1%}
     #scrolltotop span{
-        width:48px; height:48px; display:block;
+        /*width:48px; height:48px; display:block;
         background:url("http://www.uhoon.co.kr/test/1183/top.png") top no-repeat;
-        margin:0px 15px 10px 0; border-radius:3px;
+        margin:0px 0px 10px 0; border-radius:3px;
         -webkit-transition:all 0.2s ease-out;
         -moz-transition:all 0.2s ease-out;
         -o-transition:all 0.2s ease-out;
         -ms-transition:all 0.2s ease-out;
-        transition:all 0.2s ease-out
+        transition:all 0.2s ease-out*/
+        right: 30px; bottom: 30px;
+        background: #ffcf3b;
+        width: 35px; height: 35px;
+        display: inline-block;
+        border-radius: 20%;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        text-align: center;
+        z-index: 999;
+        cursor: pointer;
+        margin: 0 15px 0 0;
+        i{
+            line-height: 35px; color: #fff;
+            transform: rotate(-45deg);
         }
+    }
     #scrolltotop a:hover span{
-        background:url("http://www.uhoon.co.kr/test/1183/top.png") bottom no-repeat;
+        //background:url("http://www.uhoon.co.kr/test/1183/top.png") bottom no-repeat;
+        background: #666;
     }
 }//nav end
 footer{

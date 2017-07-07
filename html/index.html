@@ -2,18 +2,17 @@
 <html class="no-js" lang="ko">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+        minimum-scale=1.0, user-scalable=0">
     	<title>Main Page</title>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
         <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="../css/pgwslider.min.css">
         <link rel="stylesheet" href="../css/main.css" type="text/css">
         <link rel="stylesheet" href="../css/navi_footer.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="../js/pgwslider.min.js"></script>
         <script type="text/javascript" src="../js/script_main.js"></script>
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript">
@@ -28,16 +27,10 @@
                 pausePlay: true
                 });
             });
-            $(document).ready(function() {
-                $('.pgwSlider').pgwSlider({
-                    maxHeight : 550
-                })
-            });
             $(function(){
                 new WOW().init();
             })
         </script>
-
     </head>
     <body>
         <div class="wrap">
@@ -195,17 +188,17 @@
                         </div>
 
                     </div>
-                    <div id="scrolltotop" style="display: block;"><a href="#top"><span></span></a></div>
+                    <div id="scrolltotop" style="display: block;"><a href="#top"><span><i class="fa fa-chevron-up" aria-hidden="true"></i></span></a></div>
                 </div>
             </header>
 
             <div class="section_wrap">
                 <section id="intro_contents">
                     <div class="intro_image"></div>
-                    <div class="intro_image2 wow fadeInUp" data-wow-duration="1.8s" data-wow-delay="0.3s"></div>
+                    <div class="intro_image2"></div>
                     <div class="table_center_wrap">
                         <div class="table_center">
-                            <div class="intro_text">
+                            <div class="intro_text wow fadeInUp" data-wow-duration="1.8s" data-wow-delay="0.3s">
                                 <h2>D5</h2>
                                 <h2>Practically</br>Magic</h2>
                                 <span><a href="d5.html">자세히 보기<i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
@@ -216,27 +209,33 @@
 
                 <section class="cf" id="container" > <!--main_contents-->
                     <div class="products" id="main">
-                        <h1>PRODUCTS</h1>
-                        <div class="line"></div>
+                        <div class="max">
+                            <h1>PRODUCTS</h1>
+                            <div class="line"></div>
+                            <div class="more">
+                                <a href="event_list.html"><span>View All</span></a>
+                            </div>
+                        </div>
                         <div class="flexslider">
             				<ul class="slides">
                                 <li>
             						<a href="d5.html">
                                         <img src="../img/pro1.jpg" alt="" class="vis">
                                         <img src="../img/pro1_2.jpg" alt="hidden" class="hid">
+                                        <span class="bgbg"></span>
                                         <h4>
                                             D4s
                                             <span class="heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
                                             <span class="enjoy">즐겨찾기에 추가</span>
                                         </h4>
                                         <span class="inform">프로를 위한 진화</span>
-
             						</a>
             					</li>
             					<li>
                                     <a href="d5.html">
                                         <img src="../img/pro2.jpg" alt="">
                                         <img src="../img/pro2_2.jpg" alt="hidden" class="hid">
+                                        <span class="bgbg"></span>
                                         <h4>
                                             D810
                                             <span class="heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
@@ -249,6 +248,7 @@
                                     <a href="d5.html">
                                         <img src="../img/pro3.jpg" alt="">
                                         <img src="../img/pro3_2.jpg" alt="" class="hid">
+                                        <span class="bgbg"></span>
                                         <h4>
                                             D810A
                                             <span class="heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
@@ -261,13 +261,13 @@
                                     <a href="d5.html">
                                         <img src="../img/pro4.jpg" alt="">
                                         <img src="../img/pro4_2.jpg" alt="" class="hid">
+                                        <span class="bgbg"></span>
                                         <h4>
                                             Df
                                             <span class="heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
                                             <span class="enjoy">즐겨찾기에 추가</span>
                                         </h4>
                                         <span class="inform">다시 한 번 사진의 깊이를 느끼다.</span>
-
                                     </a>
             					</li>
                                 <li>
@@ -368,47 +368,117 @@
             					</li>
             				</ul>
             			</div>
-                        <div class="view-more">
-                            <a href="product_list.html">더보기</a>
-                        </div>
                     </div>
                 </section>
                 <section id="gallery">
                     <div class="bg">
                         <div class="gallerys">
-                            <h1>GALLERY</h1>
-                            <div class="line"></div>
-                            <div class="slide_wrapper">
-                                <ul class="pgwSlider">
-                                    <li>
-                                        <img src="../img/face.jpg" alt="The Nikon D5500" data-description="Detects hidden faces">
-                                    </li>
-                                    <li>
-                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/86470648765095.58a1a17df0f90.jpg" alt="D810" data-description="Beauty">
-                                    </li>
-                                    <li>
-                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4bdba151989001.5900b174040ee.jpg" alt="The NIKON D750" data-description="PALAU SKINDIVING">
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9d7d9f54233031.5952e3888288b.jpg" alt="D810" data-description="Looking from Westminster Bridge ">
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="max">
+                                <h1>GALLERY</h1>
+                                <div class="line"></div>
+                                <div class="more">
+                                    <a href="event_list.html"><span>View All</span></a>
+                                </div>
                             </div>
-                            <div class="view-more2">
-                                <a href="gallery.html">더보기</a>
+                            <div class="g_wrap">
+                                <div class="one">
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D5</h3>
+                                        <p>Rock Rock</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/86470648765095.58a1a17df0f90.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D4s</h3>
+                                        <p>Beautiful Pictorial</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6a7ca53487777.5936853210930.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="one" >
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>Df</h3>
+                                        <p>Soccer Team</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/12435824359399.563334db2ed71.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="one" >
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D810</h3>
+                                        <p>London Bridge</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9d7d9f54233031.5952e3888288b.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="one">
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D810A</h3>
+                                        <p>Nike Shoes Girl</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="../img/gal/gal_3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D710</h3>
+                                        <p>Powerful Tornados</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5643a252508465.593950e95a1f4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="one" >
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D7500</h3>
+                                        <p>Final Racing</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5975d751618331.58f4bb42f3ed0.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="one" >
+                                    <div class="over"></div>
+                                    <div class="over_txt">
+                                        <h3>D5500</h3>
+                                        <p>Deep Forest</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8e8cdf52922199.5921f8b96f866.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section id="event">
                     <div class="event_contents">
-                        <h1>EVENT</h1>
-                        <div class="line"></div>
+                        <div class="max">
+                            <h1>EVENT</h1>
+                            <div class="line"></div>
+                            <div class="more">
+                                <a href="event_list.html"><span>View All</span></a>
+                            </div>
+                        </div>
+
                         <div class="event_list">
                             <ul>
-                                <li>
+                                <li class="wow slideInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                     <a href=""><img src="../img/ev1.png" alt=""></a>
                                     <div>
                                         <strong>
@@ -419,7 +489,7 @@
                                         <span class="date">2017.06.14~ 2017.07.07</span>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="wow slideInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
                                     <a href=""><img src="../img/ev5.jpg" alt=""></a>
                                     <div>
                                         <strong>
@@ -430,7 +500,7 @@
                                         <span class="date">2017.06.14~ 사은품 소진시</span>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="wow slideInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
                                     <a href=""><img src="../img/ev3.png" alt=""></a>
                                     <div>
                                         <strong>
@@ -441,7 +511,7 @@
                                         <span class="date">2017.06.14~ 사은품 소진시</span>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="wow slideInUp" data-wow-duration="0.8s" data-wow-delay="1.2s">
                                     <a href=""><img src="../img/ev2.png" alt=""></a>
                                     <div>
                                         <strong>
@@ -454,9 +524,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="view-more">
-                            <a href="event_list.html">더보기</a>
-                        </div>
+
                     </div>
                 </section>
             </div>

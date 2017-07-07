@@ -133,7 +133,7 @@ $(function(){
     $('#scrolltotop').hide();
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 500) {
             $('#scrolltotop').fadeIn('slow');
         } else {
             $('#scrolltotop').fadeOut('slow');
