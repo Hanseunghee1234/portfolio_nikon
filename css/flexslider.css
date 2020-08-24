@@ -89,7 +89,7 @@
   content: '\f001';
   /*color: rgba(0, 0, 0, 0.8);*/
   color:#FFF;    /*원래 바로 윗줄 주석내용이었음*/
-  margin: 20px 0 0 20px;    /*원래 없음*/
+  margin: 16px 0 0 20px;    /*원래 없음*/
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {content: '\f001';}
