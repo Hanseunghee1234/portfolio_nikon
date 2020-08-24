@@ -165,10 +165,9 @@ html {
     height: 40px;
     background-color: #000;
     text-align: center;
-    position: relative;
-    top: 64px;
+    position: absolute;
+    top: 60px;
     right: 0;
-    float: right;
     padding-right: 52px;
     padding-left: 10px;
 }
