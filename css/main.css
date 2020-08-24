@@ -546,7 +546,7 @@ html {
 
 @media screen and (max-width:916px) {
     .section_wrap .cf .flexslider .slides li a {
-        height: auto;
+        height: 100%;
     }
 
     .section_wrap .cf .flexslider .slides li a .bgbg {
@@ -687,6 +687,11 @@ html {
         margin-bottom:15px;
     }
     
+    .section_wrap #event .event_contents .event_list li {
+        width: 95%;
+        margin: 0 0 15px 0;
+    }
+
     .flex-direction-nav {
         display: none;
     }
@@ -737,14 +742,5 @@ html {
 
     .section_wrap #event .event_list ul {
         justify-content: center;
-    }
-
-    .section_wrap #event .event_contents .event_list li {
-        width: 95%;
-        margin: 0 0 15px 0;
-    }
-
-    .flex-direction-nav {
-        display: none;
     }
 }
