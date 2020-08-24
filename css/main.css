@@ -525,6 +525,19 @@ html {
     font-size: 12px;
 }
 
+.heart {
+    color: #fff;
+    position: absolute;
+    bottom: 29px;
+    cursor: pointer;
+    font-size: 24px;
+    right: 17px;
+}
+
+.heart.active {
+    color: #f5363a;
+}
+
 @media screen and (max-width:1200px) {
     .section_wrap #gallery .gallerys .g_wrap .image {
         height: 200px;
@@ -673,6 +686,10 @@ html {
     .section_wrap #event .event_contents .event_list li {
         margin-bottom:15px;
     }
+    
+    .flex-direction-nav {
+        display: none;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -725,17 +742,11 @@ html {
     .flex-direction-nav {
         display: none;
     }
+    
+    .heart {
+        bottom: 8px;
+        font-size: 15px;
+        right: 9px;
+    }
 }
 
-.heart {
-    color: #fff;
-    position: absolute;
-    bottom: 29px;
-    cursor: pointer;
-    font-size: 24px;
-    right: 17px;
-}
-
-.heart.active {
-    color: #f5363a;
-}
