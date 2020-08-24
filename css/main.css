@@ -459,7 +459,7 @@ html {
 
 .section_wrap #event .event_list li {
     width: 19%;
-    height: 348px;
+    padding-bottom: 20px;
     background-color: #f4f4f4;
 }
 
@@ -529,15 +529,6 @@ html {
         height: 200px
     }
 
-    .section_wrap #event .event_contents .event_list li {
-        width: 24%;
-        margin-right: 10px
-    }
-
-    .section_wrap #event .event_contents .event_list li:nth-child(4) {
-        margin: 0
-    }
-
     .section_wrap #event .event_contents .event_list li div span {
         font-size: 12px
     }
@@ -558,15 +549,6 @@ html {
 
     .section_wrap #gallery .gallerys .g_wrap .image {
         height: 180px
-    }
-
-    .section_wrap #event .event_contents .event_list li {
-        width: 33%;
-        margin-right: 30px
-    }
-
-    .section_wrap #event .event_contents .event_list li:nth-child(2) {
-        margin-right: 0
     }
 
     .section_wrap #event .event_contents .view-more {
@@ -622,10 +604,6 @@ html {
 
     .section_wrap #gallery .g_wrap .image {
         height: 155px;
-    }
-
-    .section_wrap #event .event_contents .event_list li {
-        width: 40%;
     }
 }
 
@@ -696,8 +674,6 @@ html {
     }
 
     .section_wrap #event .event_contents .event_list li {
-        width: 60%;
-        margin: 0;
         margin-bottom:15px;
     }
 
@@ -745,7 +721,7 @@ html {
     }
 
     .section_wrap #event .event_contents .event_list li {
-        width: 85%;
+        width: 95%;
         margin: 0 0 15px 0;
     }
 
