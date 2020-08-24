@@ -457,7 +457,7 @@ html {
 }
 
 .section_wrap #event .event_list li {
-    width: 23%;
+    flex: 1;
     height: 348px;
     margin: 0 12px 0 0;
     background-color: #f4f4f4
