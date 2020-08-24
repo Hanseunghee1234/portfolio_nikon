@@ -16,15 +16,16 @@
         <script type="text/javascript" src="../js/script_main.js"></script>
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript">
-            $(window).load(function(){
+            $(document).ready(function(){
                 $('.flexslider').flexslider({
-                animation: "slide",
-                animationLoop: true,
-                itemWidth: 20,
-                itemMargin: 15,
-                minItems: 2,
-                maxItems: 4,
-                pausePlay: false
+                    animation: "slide",
+                    animationLoop: false,
+                    itemWidth: 20,
+                    touch: true,
+                    itemMargin: 15,
+                    minItems: 2,
+                    maxItems: 4,
+                    pausePlay: false
                 });
             });
             $(function(){
