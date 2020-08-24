@@ -172,7 +172,7 @@ html {
     padding-left: 10px;
 }
 
-.section_wrap .cf .more:after {
+.section_wrap section a .more:after {
     content: "";
     position: absolute;
     bottom: 0px;
