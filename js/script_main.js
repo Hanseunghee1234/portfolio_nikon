@@ -122,12 +122,8 @@ $(function(){
             }
     })
     //-----------product 슬라이드 즐겨찾기 하트
-    $('.slides li .heart').on({
-        'mouseenter':function(){
-            $(this).next().css('opacity','1')
-        },'mouseleave':function(){
-            $(this).next().css('opacity','0')
-        }
+    $('.slides li .heart').on('click', function(){
+        $(this).toggleClass('active');
     });
     //-----------스크롤시 위로버튼 생성
     $('#scrolltotop').hide();
