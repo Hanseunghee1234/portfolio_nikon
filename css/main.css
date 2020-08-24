@@ -506,7 +506,7 @@ html {
 
 .section_wrap #event .event_list li div span {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     color: #9f9f9f
 }
 
@@ -527,10 +527,6 @@ html {
 @media screen and (max-width:1200px) {
     .section_wrap #gallery .gallerys .g_wrap .image {
         height: 200px
-    }
-
-    .section_wrap #event .event_contents .event_list li div span {
-        font-size: 12px
     }
 }
 
@@ -676,31 +672,27 @@ html {
     .section_wrap #event .event_contents .event_list li {
         margin-bottom:15px;
     }
-
-    .section_wrap #event .event_contents .event_list li div span {
-        font-size: 12px
-    }
 }
 
 @media screen and (max-width:400px) {
     .section_wrap #intro_contents {
-        height: 48vh
+        height: 48vh;
     }
 
     .section_wrap #intro_contents .table_center_wrap .table_center .intro_text h2:nth-child(1) {
-        font-size: 70px
+        font-size: 70px;
     }
 
     .section_wrap #intro_contents .table_center_wrap .table_center .intro_text h2 {
-        font-size: 26px
+        font-size: 26px;
     }
 
     .section_wrap .cf {
-        margin-top: 50vh
+        margin-top: 50vh;
     }
 
     .section_wrap .cf .products {
-        padding-bottom: 120px
+        padding-bottom: 120px;
     }
 
     .section_wrap #gallery .gallerys .g_wrap .one {
@@ -718,6 +710,10 @@ html {
 
     .section_wrap #gallery .gallerys .g_wrap .image {
         height: 240px
+    }
+
+    .section_wrap #event .event_list ul {
+        justify-content: center;
     }
 
     .section_wrap #event .event_contents .event_list li {
