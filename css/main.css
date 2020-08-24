@@ -521,18 +521,19 @@ html {
 .section_wrap #event .event_list li div .date {
     position: absolute;
     left: 22px;
-    bottom: 15px
+    bottom: 15px;
+    font-size: 12px;
 }
 
 @media screen and (max-width:1200px) {
     .section_wrap #gallery .gallerys .g_wrap .image {
-        height: 200px
+        height: 200px;
     }
 }
 
 @media screen and (max-width:916px) {
     .section_wrap .cf .flexslider .slides li a {
-        height: auto
+        height: auto;
     }
 
     .section_wrap .cf .flexslider .slides li a .bgbg {
