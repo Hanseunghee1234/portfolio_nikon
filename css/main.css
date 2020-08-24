@@ -557,10 +557,6 @@ html {
         width: 33%
     }
 
-    .section_wrap #gallery .gallerys .g_wrap .image {
-        height: 180px
-    }
-
     .section_wrap #event .event_contents .view-more {
         right: 111px
     }
@@ -674,19 +670,12 @@ html {
         padding: 67px 0 33px 0
     }
 
-    .section_wrap #gallery .gallerys .g_wrap .image {
-        height: 140px
-    }
-
     .section_wrap #event .event_contents h1 {
         font-size: 18px;
         padding: 67px 0 33px 0
     }
 
-    .section_wrap #event .event_contents .event_list li {
-        margin-bottom:15px;
-    }
-    
+    .section_wrap #event .event_list ul {justify-content: center;}
     .section_wrap #event .event_contents .event_list li {
         width: 95%;
         margin: 0 0 15px 0;
