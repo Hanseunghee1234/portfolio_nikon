@@ -690,6 +690,11 @@ html {
     .flex-direction-nav {
         display: none;
     }
+    .heart {
+        bottom: 8px;
+        font-size: 15px;
+        right: 9px;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -742,11 +747,4 @@ html {
     .flex-direction-nav {
         display: none;
     }
-    
-    .heart {
-        bottom: 8px;
-        font-size: 15px;
-        right: 9px;
-    }
 }
-
