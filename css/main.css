@@ -160,7 +160,7 @@ html {
     left: 0
 }
 
-.section_wrap .cf .more {
+.section_wrap section a .more {
     width: 54px;
     height: 40px;
     background-color: #000;
@@ -182,13 +182,13 @@ html {
     background: #000 url('https://tohome.thehyundai.com/UIUX/w/pjtCom/images/sub/company/company.png') no-repeat -21px -95px;
 }
 
-.section_wrap .cf .more a {
+.section_wrap section a more a {
     display: block;
     height: 100%;
     width: 100%;
 }
 
-.section_wrap .cf .more span {
+.section_wrap section a .more span {
     font-size: 16px;
     line-height: 40px;
     color: #fff;
