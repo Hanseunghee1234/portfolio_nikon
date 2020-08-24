@@ -161,13 +161,13 @@ $(function(){
         'mouseenter':function(){
             $(this).parent().next().children('.title').css({
                 'color':'#000',
-                'font-size':'13px',
+                'font-weight':'500',
                 'transition':'0.4s'
             });
         },'mouseleave':function(){
             $(this).parent().next().children('.title').css({
                 'color':'#9f9f9f',
-                'font-size':'12px',
+                'font-weight':'400',
                 'transition':'0.4s'
             });
         }
