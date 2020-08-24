@@ -615,7 +615,8 @@ html {
 
 @media screen and (max-width:623px) {
     .section_wrap #gallery .gallerys .g_wrap .one {
-        width: 50%;
+        width: 49%;
+        margin-right: 1%;
     }
 }
 
