@@ -190,7 +190,8 @@ html {
 
 .section_wrap .cf .more span {
     font-size: 16px;
-    line-height: 40px
+    line-height: 40px;
+    color: #fff;
 }
 
 .section_wrap .cf .flexslider {
